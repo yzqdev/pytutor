@@ -6,7 +6,14 @@ from docx.shared import Inches  # 图片尺寸
 # 以上是docx库中需要用到的部分
 
 import time
-
+"""
+@Author: yanni
+@Description: //TODO 
+@Date: 12:05 2019/7/4
+@Modified By:
+@Param: 
+@return: 
+"""
 
 def makedoc():
     today = time.strftime("%Y{y}%m{m}%d{d}", time.localtime()).format(y='年', m='月', d='日')
@@ -78,6 +85,8 @@ def makedoc():
         p4.alignment = WD_PARAGRAPH_ALIGNMENT.CENTER
         run4 = p4.add_run('（联系人：小杨    电话：18888888888）')
         run4.font.name = '仿宋_GB2312'
+
+
         document.styles['Normal']._element.rPr.rFonts.set(qn('w:eastAsia'), u'仿宋_GB2312')
         run4.font.size = Pt(16)
         run4.font.bold = True
