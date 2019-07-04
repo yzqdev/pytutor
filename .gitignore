@@ -7,3 +7,16 @@
 *.iml
 out
 gen
+build/
+dist/
+
+
+# 后缀
+*.mp3
+*.mp4
+*.xls
+*.xlsx
+*.doc
+*.docx
+*.ppt
+*.pptx
