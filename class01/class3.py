@@ -10,6 +10,7 @@
 import requests
 import json
 
+
 class CocaCola:
     formula = ['caffeine', 'sugar', 'water', 'soda']
 
@@ -27,12 +28,29 @@ def main():
     print("Status code:", r.status_code)
     # 将API响应存储在一个变量中
     response_dict = r.json()
-    aa=json.dumps(response_dict,ensure_ascii=False)
-    with open("1.json",'w',encoding='utf-8') as gitapi:
+    aa = json.dumps(response_dict, ensure_ascii=False)
+    with open("1.json", 'w', encoding='utf-8') as gitapi:
         gitapi.write(aa)
     # 处理结果
 
 
+def bianli():
+    favorite_languages = {
+        'jen': 'python',
+        'sarah': 'c',
+        'edward': 'ruby',
+        'phil': 'python',
+    }
+    for name, lang in favorite_languages.items():
+        print(name.title() + lang.title())
+
+
+def numJewelsInStones( J: str, S: str) -> int:
+
+    return sum(S.count(i) for i in J)
+
 
 if __name__ == "__main__":
-    main()
+    # bianli()
+    a=numJewelsInStones('aA',"adeeaarerAAeer")
+    print(a)

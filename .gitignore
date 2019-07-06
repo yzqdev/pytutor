@@ -9,7 +9,8 @@ out
 gen
 build/
 dist/
-
+infile
+outfile
 
 # 后缀
 *.mp3
@@ -20,3 +21,4 @@ dist/
 *.docx
 *.ppt
 *.pptx
+*.json
