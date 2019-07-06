@@ -11,7 +11,7 @@
 
 
 def clearBlankLine():
-    file1 = open('../infile/generatearray.py', 'r', encoding='utf-8')  # 要去掉空行的文件
+    file1 = open('../infile/automatic.py', 'r', encoding='utf-8')  # 要去掉空行的文件
     file2 = open('../outfile/out.py', 'w', encoding='utf-8')  # 生成没有空行的文件
     try:
         for line in file1.readlines():
