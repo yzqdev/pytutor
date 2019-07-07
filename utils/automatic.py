@@ -12,7 +12,7 @@ import string
 from utils.statmethod.statmethod import Statmethod
 
 
-class Automatic():
+class Automatic:
     def __init__(self):
         print("program started!")
 
@@ -89,3 +89,4 @@ class Automatic():
                 for line in fo:
                     fw.write(staticmethod.strip_control_characters(line))
         print("已完成")
+

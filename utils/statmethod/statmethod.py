@@ -10,7 +10,7 @@
 """
 
 
-class Statmethod():
+class Statmethod:
     def strip_control_characters(self, s):
         word = ''
         for i in s:

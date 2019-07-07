@@ -32,6 +32,7 @@ class Salmon(Fish):
 
 class Shark(Fish):
     def __init__(self):
+        super().__init__()
         self.hungry = True
 
     def eat(self):
@@ -40,3 +41,7 @@ class Shark(Fish):
             self.hungry = False
         else:
             print("太撑了，吃不下！")
+if __name__ == '__main__':
+    s=Shark()
+    print(s.eat())
+    print(s.hungry)
