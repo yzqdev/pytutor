@@ -13,13 +13,15 @@ def open_url(url):
 
 
 def get_img(html):
+    print("hello")
     p = r'<img class="BDE_Image" src="[^"]*\.jpg"'
     imglist = re.findall(p, html)
 
     for each in imglist:
         print(each)
+    print("end")
 
 
 if __name__ == '__main__':
-    url = "http://tieba.baidu.com/p/3560937109"
+    url = "http://tieba.baidu.com/p/6186074710"
     get_img(open_url(url))

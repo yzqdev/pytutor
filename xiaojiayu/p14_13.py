@@ -1,6 +1,6 @@
 from urllib.request import Request, urlopen
 from urllib.error import URLError
-
+someurl="https://www.baidu.com"
 req = Request(someurl)
 
 try:
@@ -13,4 +13,5 @@ except URLError as e:
         print('The server couldn\'t fulfill the request.')
         print('Error code: ', e.code)
 else:
+    print("hello")
 # everything is fine
