@@ -2,17 +2,16 @@
 # -*-coding:utf-8-*-
 
 """
-@author: YangZhengqian
+@Author: YangZhengqian
 @contact: xx@xx.com
 @software: PyCharm
-@file: testdemo.py
-@time: 2019/7/3 23:03
+@file: __init__.py.py
+@time: 2019/7/7 14:00
 """
 
 
 def main():
-    print("helo")
-    print("hello")
+    pass
 
 
 if __name__ == "__main__":

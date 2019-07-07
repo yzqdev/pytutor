@@ -4,8 +4,10 @@ from docx.shared import Pt  # 磅数
 from docx.oxml.ns import qn  # 中文格式
 from docx.shared import Inches  # 图片尺寸
 # 以上是docx库中需要用到的部分
-
+from utils.statmethod.statmethod import Statmethod
+from utils.automatic import Automatic
 import time
+
 """
 @Author: yanni
 @Description: //TODO 
@@ -15,11 +17,12 @@ import time
 @return: 
 """
 
+
 def makedoc():
     today = time.strftime("%Y{y}%m{m}%d{d}", time.localtime()).format(y='年', m='月', d='日')
-
+    auto = Automatic()
     price = input('请输入今日价格：')
-    company_list = ['客户1', '客户2', '客户3', '客户4', '客户5', '客户6', '客户7', '客户8', '客户9', '客户10']
+    company_list = auto.gencustom()
 
     for i in company_list:
         document = Document()
@@ -86,7 +89,6 @@ def makedoc():
         run4 = p4.add_run('（联系人：小杨    电话：18888888888）')
         run4.font.name = '仿宋_GB2312'
 
-
         document.styles['Normal']._element.rPr.rFonts.set(qn('w:eastAsia'), u'仿宋_GB2312')
         run4.font.size = Pt(16)
         run4.font.bold = True
@@ -94,7 +96,7 @@ def makedoc():
         document.add_page_break()
         p5 = document.add_paragraph()
         run4 = p5.add_run('此处是广告')
-        document.add_picture('imgs/加油.jpg', width=Inches(8))
+        document.add_picture('../resources/imgs/加油.jpg', width=Inches(8))
         document.save('../dist/%s-价格通知.docx' % i)
         # 以“客户名-价格通知”作为文件名保存
 
