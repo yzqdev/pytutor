@@ -20,7 +20,7 @@ def test2():
     return True
 
 
-e1 = Entry(root, textvariable=v, validate="focusout", \
+e1 = Entry(root, textvariable=v, validate="focusout",
            validatecommand=test1, invalidcommand=test2)
 e2 = Entry(root)
 e1.pack(padx=10, pady=10)

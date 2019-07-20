@@ -16,6 +16,8 @@ outfile
 *.mp3
 *.mp4
 *.xls
+*.jpg
+*.png
 *.xlsx
 *.doc
 *.docx

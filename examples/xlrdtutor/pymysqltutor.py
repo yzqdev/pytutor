@@ -26,10 +26,9 @@ connection = pymysql.connect(**config)
 
 # 获取明天的时间
 tomorrow = datetime.now().date() + timedelta(days=1)
+
+
 def insertdata():
-
-
-
     # 执行sql语句
     try:
         with connection.cursor() as cursor:
@@ -43,6 +42,8 @@ def insertdata():
         connection.rollback()
     finally:
         connection.close();
+
+
 def searchdata():
     # 执行sql语句
     try:
@@ -50,7 +51,6 @@ def searchdata():
             # 执行sql语句，进行查询
             # 获取雇佣日期
 
-
             sql = 'SELECT first_name, last_name, hire_date FROM employees '
             cursor.execute(sql)
             # 获取查询结果
@@ -64,13 +64,14 @@ def searchdata():
 
     finally:
         connection.close();
+
+
 def updatedata():
     try:
         with connection.cursor() as cursor:
             # 执行sql语句，进行查询
             # 获取雇佣日期
 
-
             sql = 'SELECT first_name, last_name, hire_date FROM employees '
             cursor.execute(sql)
             # 获取查询结果
@@ -83,5 +84,7 @@ def updatedata():
         connection.rollback()
     finally:
         connection.close();
+
+
 if __name__ == "__main__":
     searchdata()
