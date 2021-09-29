@@ -45,12 +45,11 @@ def bianli():
         print(name.title() + lang.title())
 
 
-def numJewelsInStones( J: str, S: str) -> int:
-
+def numJewelsInStones(J: str, S: str) -> int:
     return sum(S.count(i) for i in J)
 
 
 if __name__ == "__main__":
     # bianli()
-    a=numJewelsInStones('aA',"adeeaarerAAeer")
+    a = numJewelsInStones('aA', "adeeaarerAAeer")
     print(a)

@@ -51,10 +51,13 @@ def listoperate():
     g = {i: j for i, j in zip(range(1, 6), 'abcde')}
     g = {i: j.upper() for i, j in zip(range(1, 6), 'abcde')}
     print(z)
+
+
 def dicop():
     letters = ['a', 'b', 'c', 'd', 'e', 'f', 'g']
     for num, letter in enumerate(letters):
         print(letter, 'is', num + 1)
+
 
 if __name__ == "__main__":
     # slicet()
