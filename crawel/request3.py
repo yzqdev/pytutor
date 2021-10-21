@@ -5,15 +5,16 @@
 @Author: YangZhengqian
 @contact: xx@xx.com
 @software: PyCharm
-@file: class6.py
-@time: 2019/7/7 13:47
+@file: request3.py
+@time: 2021/10/18 21:35
 """
-from utils.automatic import Automatic
+
+import requests
 
 
 def main():
-    auto = Automatic()
-    auto.gencustom()
+    requests.get("https://www.baidu.com")
+    pass
 
 
 if __name__ == "__main__":

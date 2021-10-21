@@ -78,7 +78,7 @@ class FirstCraweller:
 
     # 表单提交登录 向服务器发送一个post请求并携带相关参数，将服务器返回的cookie保存在本地,cookie是服务器在客户端上的“监视器”，记录了登录信息等。客户端通过识别请求携带的cookie，确定是否登录
     def zhihu(self):
-        params = {'username': '18856967709', 'passwd': 'Qperfect2019'}
+        params = {'username': '18856967709', 'passwd': ''}
         response = requests.post("http://zhihu.com/login", data=params)
         for key, value in response.cookies.items():
             print('key = ', key + ' ||| value :' + value)
