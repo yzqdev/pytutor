@@ -33,7 +33,7 @@ def makedoc():
         document.styles['Normal']._element.rPr.rFonts.set(qn('w:eastAsia'), u'微软雅黑')
         # 设置文档的基础样式
 
-        document.add_picture('imgs/加油.jpg', width=Inches(6))
+        # document.add_picture('imgs/加油.jpg', width=Inches(6))
         # 在文件最上头插入图片作为文件红头，宽度为6英寸
 
         p1 = document.add_paragraph()
@@ -96,7 +96,7 @@ def makedoc():
         document.add_page_break()
         p5 = document.add_paragraph()
         run4 = p5.add_run('此处是广告')
-        document.add_picture('../resources/imgs/加油.jpg', width=Inches(8))
+        # document.add_picture('../resources/imgs/加油.jpg', width=Inches(8))
         document.save('../dist/%s-价格通知.docx' % i)
         # 以“客户名-价格通知”作为文件名保存
 

@@ -22,7 +22,7 @@ textLabel.pack(side=LEFT)
 
 # 创建一个图像Label对象
 # 用PhotoImage实例化一个图片对象（支持gif格式的图片）
-photo = PhotoImage(file="18.gif")
+photo = PhotoImage(file="18.png")
 imgLabel = Label(frame1, image=photo)
 imgLabel.pack(side=RIGHT)
 
@@ -33,4 +33,8 @@ theButton.pack()
 frame1.pack(padx=10, pady=10)
 frame2.pack(padx=10, pady=10)
 
-mainloop()
+
+
+
+if __name__ == '__main__':
+    mainloop()

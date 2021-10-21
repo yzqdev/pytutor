@@ -1,8 +1,11 @@
+#!/usr/bin/python
+# -*-coding:utf-8-*-
+
 import urllib.request
 import re
 
 
-def open_url(url):
+def open_url(url: str):
     req = urllib.request.Request(url)
     req.add_header('User-Agent',
                    'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_10_1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/39.0.2171.95 Safari/537.36')

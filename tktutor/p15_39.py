@@ -28,4 +28,6 @@ menubar.add_cascade(label="编辑", menu=editmenu)
 # 显示菜单
 root.config(menu=menubar)
 
-mainloop()
+
+if __name__ == '__main__':
+    mainloop()

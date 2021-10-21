@@ -26,4 +26,5 @@ e2 = Entry(root)
 e1.pack(padx=10, pady=10)
 e2.pack(padx=10, pady=10)
 
-mainloop()
+if __name__ == '__main__':
+    mainloop()
