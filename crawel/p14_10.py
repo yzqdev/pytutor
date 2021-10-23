@@ -5,8 +5,7 @@ import re
 def open_url(url):
     req = urllib.request.Request(url)
     req.add_header('User-Agent',
-                   'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_10_1) AppleWebKit/537.36 (KHTML, like Gecko) '
-                   'Chrome/39.0.2171.95 Safari/537.36')
+                   'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/94.0.4606.81 Safari/537.36 Edg/94.0.992.50')
     page = urllib.request.urlopen(req)
     html = page.read().decode('utf-8')
 
