@@ -29,7 +29,7 @@ async def read_item(item_id: int):
     return {"item_id": item_id}
 
 
-@app.post("/uploadfile/")
+@app.post("/upload/")
 async def create_upload_file(file: UploadFile = File(...)):
     contents = await file.read()
     filename="d:/images/a.txt"
@@ -41,6 +41,7 @@ async def create_upload_file(file: UploadFile = File(...)):
 
 @app.post("/items/")
 async def create_item(item: Item):
+    print(type(item))
     return item
 
 
