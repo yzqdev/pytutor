@@ -2,7 +2,7 @@ from tkinter import *
 
 root = Tk()
 
-photo = PhotoImage(file="bg.gif")
+photo = PhotoImage(file="18.png")
 theLabel = Label(root,
                  text="学Python\n到FishC",
                  justify=LEFT,
