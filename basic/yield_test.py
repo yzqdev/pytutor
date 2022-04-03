@@ -8,6 +8,7 @@
 @file: yield_test.py
 @time: 2022/1/29 23:07
 """
+from past.builtins import xrange
 
 
 def main():

@@ -9,6 +9,7 @@ def fab(n):
         return fab(n - 1) + fab(n - 2)
 
 
-result = fab(35)
-if result != -1:
-    print('总共有%d对小兔崽子诞生！' % result)
+if __name__ == '__main__':
+    result = fab(35)
+    if result != -1:
+        print('总共有%d对小兔崽子诞生！' % result)
