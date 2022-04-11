@@ -7,30 +7,36 @@
 @file: class3.py
 @time: 2019/7/4 14:26
 """
-import requests
+import httpx
 import json
+import ssl
+import certifi
+context=ssl._create_unverified_context()
+def drink():
+    print('Energy!')
 
+headers = {
+    'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/100.0.4896.75 Safari/537.36'
+}
 
 class CocaCola:
     formula = ['caffeine', 'sugar', 'water', 'soda']
 
-    def drink(self):
-        print('Energy!')
-
 
 def main():
     coke = CocaCola()
-    coke.drink()
+    drink()
+    print(ssl.get_default_verify_paths())
 
     # 执行API调用并存储响应
     url = 'https://api.github.com/search/repositories?q=language:python&sort=stars'
-    r = requests.get(url)
+    r = httpx.get(url, headers=headers,verify=False)
     print("Status code:", r.status_code)
     # 将API响应存储在一个变量中
     response_dict = r.json()
     aa = json.dumps(response_dict, ensure_ascii=False)
-    with open("1.json", 'w', encoding='utf-8') as gitapi:
-        gitapi.write(aa)
+    with open("1.json", 'w', encoding='utf-8') as git_api:
+        git_api.write(aa)
     # 处理结果
 
 
@@ -51,5 +57,6 @@ def numJewelsInStones(J: str, S: str) -> int:
 
 if __name__ == "__main__":
     # bianli()
+    main()
     a = numJewelsInStones('aA', "adeeaarerAAeer")
     print(a)

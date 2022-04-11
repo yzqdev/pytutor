@@ -1,13 +1,7 @@
 #!/usr/bin/python
 # -*-coding:utf-8-*-
 
-"""
-@Author: YangZhengqian
-@contact: xx@xx.com
-@software: PyCharm
-@file: class07.py
-@time: 2019/7/17 12:55
-"""
+
 
 from tempfile import *
 def main():
