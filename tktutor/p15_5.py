@@ -33,8 +33,5 @@ theButton.pack()
 frame1.pack(padx=10, pady=10)
 frame2.pack(padx=10, pady=10)
 
-
-
-
 if __name__ == '__main__':
     mainloop()

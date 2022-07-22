@@ -151,13 +151,10 @@ cython_debug/
 
 # 后缀
 *.mp3
-*.mp4
 *.xls
-*.jpg
-*.png
+
 *.xlsx
 *.doc
 *.docx
 *.ppt
 *.pptx
-*.json

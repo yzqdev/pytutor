@@ -14,7 +14,8 @@ class App:
         print("互联网的广大朋友们大家好，我是小甲鱼！")
 
 
-root = tk.Tk()
-app = App(root)
+if __name__ == '__main__':
+    root = tk.Tk()
+    app = App(root)
 
-root.mainloop()
+    root.mainloop()
