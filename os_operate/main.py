@@ -10,7 +10,7 @@
 """
 import os
 import sys
-
+import os
 
 def main():
     filename = 'd:/images/a.txt'
@@ -19,13 +19,17 @@ def main():
     print(sys.version)
     pass
 
-import os
+
+
 
 cmd = 'ping baidu.com'
+
+
 def ping():
     r = os.popen(cmd)
     for line in r.readlines():
         print(line)
+
 
 if __name__ == "__main__":
     ping()

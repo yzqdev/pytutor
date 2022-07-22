@@ -9,11 +9,15 @@ blessings==1.7
 blinker==1.4
 bson==0.5.10
 cachelib==0.6.0
-
+certifi @ file:///C:/Windows/TEMP/abs_e9b7158a-aa56-4a5b-87b6-c00d295b01fanefpc8_o/croots/recipe/certifi_1655968940823/work/certifi
+cffi==1.15.1
 chardet==4.0.0
 charset-normalizer==2.0.10
+cli-helpers==2.2.1
 click==8.0.3
 colorama==0.4.4
+configobj==5.0.6
+cryptography==37.0.4
 curtsies==0.3.10
 cwcwidth==0.1.6
 defusedxml==0.7.1
@@ -23,7 +27,7 @@ distlib==0.3.4
 Django==4.0.2
 dnspython==2.2.1
 email-validator==1.1.3
-fastapi==0.73.0
+fastapi==0.79.0
 filelock==3.7.0
 flake8==4.0.1
 Flask==2.0.2
@@ -44,6 +48,7 @@ httpie==3.1.0
 httptools==0.2.0
 httpx==0.22.0
 idna==3.3
+importlib-resources==5.8.0
 isort==5.10.1
 itsdangerous==2.0.1
 jedi==0.18.1
@@ -54,17 +59,25 @@ lxml==4.7.1
 MarkupSafe==2.0.1
 mccabe==0.6.1
 multidict==6.0.2
+mycli==1.25.0
 Nuitka==0.9.6
 oauthlib==2.1.0
 orjson==3.6.7
 packaging==21.3
 parso==0.8.3
 pefile==2022.5.30
+pendulum==2.1.2
+pgcli==3.4.1
+pgspecial==1.13.1
 Pillow==9.0.0
 pipenv==2022.5.2
 platformdirs==2.5.2
 pluggy==1.0.0
+prompt-toolkit==3.0.30
+psycopg2==2.9.3
+pyaes==1.6.1
 pycodestyle==2.8.0
+pycparser==2.21
 pydantic==1.9.0
 pydocstyle==6.1.1
 pyflakes==2.4.0
@@ -74,7 +87,9 @@ pyinstaller==5.2
 pyinstaller-hooks-contrib==2022.0
 pylint==2.14.1
 pymongo==4.0.1
+PyMySQL==1.0.2
 pyparsing==3.0.7
+pyperclip==1.8.2
 PySide6==6.2.2.1
 PySocks==1.7.1
 python-dateutil==2.8.2
@@ -82,6 +97,7 @@ python-dotenv==0.19.2
 python-lsp-jsonrpc==1.0.0
 python-lsp-server==1.4.1
 python-multipart==0.0.5
+pytzdata==2020.1
 pywin32-ctypes==0.2.0
 pyxdg==0.27
 PyYAML==5.4.1
@@ -91,6 +107,7 @@ requests-oauthlib==1.1.0
 requests-toolbelt==0.9.1
 rfc3986==1.5.0
 rope==1.1.1
+setproctitle==1.2.3
 shiboken2==5.15.2.1
 shiboken6==6.2.2.1
 six==1.16.0
@@ -98,7 +115,8 @@ sniffio==1.2.0
 snowballstemmer==2.2.0
 soupsieve==2.3.1
 sqlparse==0.4.2
-starlette==0.17.1
+starlette==0.19.1
+tabulate==0.8.10
 toml==0.10.2
 tomli==2.0.1
 tomlkit==0.11.0
@@ -111,6 +129,7 @@ uvicorn==0.15.0
 virtualenv==20.14.1
 virtualenv-clone==0.5.7
 watchgod==0.7
+wcwidth==0.2.5
 websockets==10.1
 Werkzeug==2.0.2
 Whoosh==2.7.4
